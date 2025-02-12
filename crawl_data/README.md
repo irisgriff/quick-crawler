@@ -1,0 +1,1 @@
+This directory stores the crawl data when running `../main.py`.

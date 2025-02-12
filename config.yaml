@@ -1,0 +1,19 @@
+# Requests config
+timeout_policy: 0.5  # Timeout after 0.5 seconds
+retry_delay: 0.05 # Seconds to wait before retrying
+num_crawlers: 16 # number of crawlers
+
+# Crawl config
+valid_domains: [
+  "https://en.wikipedia.org"
+]
+link_handler: "wikipedia_handler"
+main_body_xpath: "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]" # The xpath to the main body of a wikipedia page.
+# URLs to seed the web crawler
+start_urls: [
+  "https://en.wikipedia.org/wiki/Statistics",
+  "https://en.wikipedia.org/wiki/Language_model",
+  "https://en.wikipedia.org/wiki/Bloom_filter",
+  "https://en.wikipedia.org/wiki/Robots.txt",
+  "https://en.wikipedia.org/wiki/Process_management_(computing)",
+]
